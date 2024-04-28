@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  frontend:
+    image: blockscout-frontend:local
+    platform: linux/arm64/v8
+    restart: always
+    container_name: 'frontend'
+    env_file:
+      -  ../envs/0g-frontend.env
